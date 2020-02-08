@@ -5,16 +5,14 @@ body{
 }
 
 h1{
-    color: brown;
+    color: #451F11;
     font-size: 100px;
-    
-    display: inline-block;
 
     font-family: 'Palatino', serif;
 }
 
 #second-header{
-    color: #000000;
+    color: white;
 }
 
 p{
@@ -22,13 +20,24 @@ p{
     width: 30%;
 }
 
+#hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+#heading-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #hero-wrapper{
     width: 600px;
-    margin-right: auto;
-    margin-left: auto;
     text-align: center;
-    margin-top: 10%;
-
+    
     position: relative;
     z-index: 2;
 }
@@ -46,4 +55,45 @@ p{
 
     width: 50%;
     height: 100%;
+}
+
+#navbar{
+    position: absolute; 
+    z-index: 5;
+    top: 0px;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-social{
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+}
+
+#nav-text{
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    height: 50px;
+}
+
+#icon{
+    height: 22px;
+    margin-right: 50px;
+}
+
+#menu-link{
+    color: white;
+    margin-left: 50px;
 }
