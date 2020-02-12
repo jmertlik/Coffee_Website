@@ -9,15 +9,19 @@ h1{
     font-size: 100px;
 
     font-family: 'Palatino', serif;
-}
+
+    margin-bottom: 0px;
+} 
 
 #second-header{
     color: white;
+    padding-left: 20px;
 }
 
 p{
     font-size: 14px;
-    width: 30%;
+    width: 44%;
+    text-align: right;
 }
 
 #hero-section{
@@ -40,6 +44,8 @@ p{
     
     position: relative;
     z-index: 2;
+
+    padding-left: 37px;
 }
 
 #hero-beans{
@@ -96,4 +102,38 @@ p{
 #menu-link{
     color: white;
     margin-left: 50px;
+}
+
+.standard-margin-section{
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 200px;
+}
+
+.columns-wrapper{
+    display: flex;
+
+}
+
+.column{
+    max-width: 30%;
+    background-color: #ffffff;
+}
+
+.column-image{
+    width: 100%;
+}
+
+.middle{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.column-text-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
 }
