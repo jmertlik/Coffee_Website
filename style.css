@@ -2,6 +2,8 @@
 
 body{
     font-family: 'Avenir', sans-serif;
+
+    background-color: #F7F7F7;
 }
 
 h1{
@@ -136,4 +138,51 @@ p{
     align-items: center;
 
     padding: 25px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(350px, auto);
+
+    grid-gap: 15px;
+}
+
+.espresso-pic{
+    background-image: url("img/esspre.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.cappucino-pic{
+    background-image: url("img/cap.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.grid-text{
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    background-color: white;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondone{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.grid-writing{
+    width: 100%;
+    text-align: left;
 }
