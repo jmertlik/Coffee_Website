@@ -4,6 +4,8 @@ body{
     font-family: 'Avenir', sans-serif;
 
     background-color: #F7F7F7;
+
+    margin: 0px;
 }
 
 h1{
@@ -185,4 +187,75 @@ p{
 .grid-writing{
     width: 100%;
     text-align: left;
+}
+
+.contact-section{
+    padding-top: 200px;
+
+    display: flex;
+}
+
+.contact-img-wrapper{
+    background-image: url(img/esp_.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    margin-right: 15px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper{
+    width: 50%;
+    margin-left: 15px;
+
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-color: white;
+}
+
+#contact-heading{
+    color: white;
+}
+
+input, textarea{
+    margin-top: 25px;
+    padding-left:15px;
+
+    font-size: 20px;
+}
+
+input[type=text], textarea{
+    height: 50px;
+    width: 75%;
+
+    border: none;
+    background-color: #F7F7F7;
+
+    font-weight: 100;
+}
+
+input[type=submit]{
+    color: white;
+    background-color: #451F11;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-family: 'Palatino', serif;
+}
+
+#contact-heading{
+    text-align: center;
+    font-weight: 100;
+    font-size: 64px;
+    font-family: 'Palatino', serif;
 }
