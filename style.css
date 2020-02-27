@@ -17,11 +17,31 @@ h1{
     margin-bottom: 0px;
 } 
 
+#first-header{
+    animation-name: firstAnimation;
+    animation-duration: 0.6s;
+    animation-delay: 0.1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes firstAnimation{
+    0% { transform: translate(0, -50%); opacity: 0.1;}
+    100% { transform: translate(0, 0%); opacity: 1};
+}
+
 #second-header{
     color: white;
     padding-left: 20px;
+    animation-name: secondAnimation;
+    animation-duration: 0.6s;
+    animation-delay: 0.1s;
+    animation-timing-function: ease-out;
 }
 
+@keyframes secondAnimation{
+    0% { transform: translateY(50%); opacity: 0.1;}
+    100% { transform: translateY(0%); opacity: 1};
+}
 p{
     font-size: 14px;
     width: 44%;
@@ -251,6 +271,12 @@ input[type=submit]{
     padding-bottom: 10px;
 
     font-family: 'Palatino', serif;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+input[type=submit]:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
 }
 
 #contact-heading{
@@ -258,4 +284,36 @@ input[type=submit]{
     font-weight: 100;
     font-size: 64px;
     font-family: 'Palatino', serif;
+}
+
+.footer-wrapper{
+    margin-top: 200px;
+    background-color: white;
+}
+
+.footer{
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.footer-link{
+    margin-left: 15px;
+}
+
+.copyright-wrapper{
+    background-color: #F7F7F7;
+}
+
+.copyright-text{
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+}
+
+#footer-heading{
+    margin: 0px;
+    font-size: 35px;
 }
