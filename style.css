@@ -6,6 +6,8 @@ body{
     background-color: #F7F7F7;
 
     margin: 0px;
+
+    font-size: 100%;
 }
 
 h1{
@@ -15,6 +17,8 @@ h1{
     font-family: 'Palatino', serif;
 
     margin-bottom: 0px;
+
+    font-size: 6em;
 } 
 
 #first-header{
@@ -42,8 +46,9 @@ h1{
     0% { transform: translateY(50%); opacity: 0.1;}
     100% { transform: translateY(0%); opacity: 1};
 }
-p{
-    font-size: 14px;
+
+#sub-title{
+    font-size: 1em;
     width: 44%;
     text-align: right;
 }
@@ -137,11 +142,14 @@ p{
 
 .columns-wrapper{
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .column{
-    max-width: 30%;
+    width: 30%;
+    min-width: 200px;
     background-color: #ffffff;
 }
 
@@ -152,6 +160,8 @@ p{
 .middle{
     margin-right: 20px;
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .column-text-wrapper{
@@ -316,4 +326,57 @@ input[type=submit]:hover{
 #footer-heading{
     margin: 0px;
     font-size: 35px;
+}
+
+@media screen and (max-width: 640px) {
+    #hero-beans{
+        width: 100vw;
+        height: 50vh;
+        bottom: 0px;
+        top: auto;
+    }
+
+    #second-header{
+        margin-top: 0px;
+    }
+
+    #heading-wrapper{
+        padding-top: 7em;
+        flex-direction: column;
+    }
+
+    #sub-title{
+        color: white;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .middle{
+        flex-direction: column-reverse;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .cappucino-pic{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .grid-text{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .espresso-pic{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .secondone{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
 }
